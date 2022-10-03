@@ -24,14 +24,14 @@ const handleChange = (event) => {
   setMode(event.target.value);
 };
 const searching=(q)=>{
-   fetch("http://localhost:4000/jobs/?q="+q).then(data=>data.json())
+   fetch("https://capstonebackend--q.herokuapp.com/jobs/?q="+q).then(data=>data.json())
   .then(data =>settitle(data))
 }
 const filtern=()=>{
       const obj = {
         mode,company,location,special
       }
-      fetch("http://localhost:4000/jobs",{
+      fetch("https://capstonebackend--q.herokuapp.com/jobs",{
         method: "POST",
         body: JSON.stringify(obj),
         headers: {
