@@ -1,0 +1,125 @@
+.home_container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.home_container .left_sign{
+    display:flex;
+    width:1000px;
+    flex-direction:column;
+    flex-direction:flex-start;
+    gap:5px
+}
+.images-Show{
+  display: flex;
+  width:50rem;
+  height:fit-content;
+  gap:70px;
+  flex-wrap: wrap;
+  
+}
+.images-Show img{
+    width: 200px;
+    height: 200px;
+}
+.home_heading{
+    display:flex;
+    margin-top:100px;
+    margin-right:100px;
+    width:100%;
+    justify-content:center;
+    
+}
+.button1{
+    position :relative;
+    right:-100px
+}
+.save_btn{
+    font-size: 20px;
+    background-color:blue;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border:0 solid white;
+    border-radius: 10px;
+    color:white;
+}
+.like_btn{
+    text-decoration:none;
+    font-size: 20px;
+    background-color:#F082AC;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    padding:10px,10px;
+    border:0 solid white;
+    border-radius: 10px;
+    color:white;
+}
+.img-border{
+    display:flex;
+    justify-content:center;
+    background-color:#CED0D1;
+    width:600px
+}
+
+
+.line{
+    border:2px solid #CED0D1;
+    height:1px;
+    width:100%;
+    margin-top: 25px;
+}
+
+.footer{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:150px;
+    height:300px;
+    font-family:"Arial, sans-serif"
+}
+.text_{
+    font-family:"Haas Grot Text R Web";
+}
+@media screen and (max-width:780px) {
+    .home_heading{
+       display:flex;
+       flex-direction:center;
+    }
+    .button1{
+        display:none
+    }
+    .img-border {
+        display:flex;
+        justify-content:center;
+        background-color:#CED0D1;
+        width:"400px";
+        height:"400px";
+              
+    }
+    .home_container .left_sign{
+        display:flex;
+        width:500px;
+        flex-direction:column;
+        flex-direction:flex-start;
+        gap:5px
+    }
+    .images-Show{
+        display: flex;
+        width:600px;
+        height:fit-content;
+        gap:70px;
+        flex-wrap: wrap;
+        
+      }
+      .images-Show img{
+          width: 200px;
+          height: 200px;
+          
+      }
+      
+      .footer{
+         margin-top:20px;
+        font-family:"Arial, sans-serif"
+    }
+}
+/* Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif */
