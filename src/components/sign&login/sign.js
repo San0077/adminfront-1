@@ -15,7 +15,7 @@ export function Signin() {
         email,
         password,
       };
-      fetch("http://localhost:4000/signin", {
+      fetch("https://capstonebackend--q.herokuapp.com/signin", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
